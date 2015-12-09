@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_edt_tarefa">nome da tarefa</string>
+    <string name="hint_edt_descricao">descrição da tarefa</string>
+    <string name="hint_edt_dialogo">diálogo sobre a tarefa</string>
+    <string name="hint_edt_vencimento">vencimento</string>
+    <string name="txt_lembrete">lembretes</string>
+    <string name="text_cb_email">e-mail</string>
+    <string name="text_cb_sms">sms</string>
+    <string name="actionbar_comenta">+comentário</string>
+    <string name="actionbar_grava">grava</string>
+    <string name="actionbar_exclui">exclui</string>
+    <string name="actionbar_conclui">conclui</string>
+</resources>

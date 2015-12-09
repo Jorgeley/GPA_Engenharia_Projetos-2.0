@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="titulo_atv_projeto">" "</string>
+    <string name="hint_edt_projeto">nome do projeto</string>
+    <string name="hint_edt_descricaoprojeto">descrição do projeto</string>
+</resources>

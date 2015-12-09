@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Strings relacionadas `a AtvLogin -->
+    <string name="titulo_atv_login">GPA Engenharia - Projetos</string>
+    <string name="hint_email">Usuário</string>
+    <string name="hint_senha">Senha</string>
+    <string name="texto_entrar">Entrar</string>
+    <string name="texto_entrar_curto">Entrar</string>
+
+    <string name="erro_email_invalido">Usuário inválido</string>
+    <string name="erro_senha_invalida">Senha muito curta</string>
+    <string name="erro_senha_incorreta">Senha incorreta</string>
+    <string name="erro_campo_requerido">Este campo é requerido</string>
+</resources>

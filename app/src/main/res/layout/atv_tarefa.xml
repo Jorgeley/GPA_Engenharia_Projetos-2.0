@@ -1,0 +1,155 @@
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:stretchColumns="0,1"
+    android:showDividers="beginning|middle|end"
+    android:divider="#000"
+    android:shrinkColumns="0,1"
+    android:measureWithLargestChild="false"
+    android:id="@+id/TLtarefa">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PRGtarefa"
+        android:visibility="gone" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/EDTtarefa"
+            android:layout_column="0"
+            android:layout_span="3"
+            android:inputType="textCapWords|textAutoComplete|textAutoCorrect|text"
+            android:hint="@string/hint_edt_tarefa" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:measureWithLargestChild="false"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:id="@+id/TRspinners">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/SPNprojeto"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:textAlignment="viewEnd" />
+        <!--android:entries="@string/hint_edt_tarefa"-->
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/SPNresponsavel"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:textAlignment="viewEnd" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/EDTdescricao"
+            android:layout_column="0"
+            android:layout_span="3"
+            android:height="100dp"
+            android:lines="100"
+            android:hint="@string/hint_edt_descricao"
+            android:gravity="bottom" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:id="@+id/TRdialogo">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/EDTdialogo"
+            android:layout_column="0"
+            android:layout_span="3"
+            android:height="100dp"
+            android:lines="100"
+            android:hint="@string/hint_edt_dialogo"
+            android:inputType="none"
+            android:editable="false"
+            android:nestedScrollingEnabled="false"
+            android:gravity="bottom"
+            android:onClick="novoComentario" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/EDTvencimento"
+            android:autoText="false"
+            android:inputType="none"
+            android:editable="false"
+            android:onClick="mostraDatePicker"
+            android:layout_weight="1"
+            android:layout_column="0"
+            android:hint="@string/hint_edt_vencimento" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_lembrete"
+                android:id="@+id/TXTlembretes" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="@string/text_cb_email"
+                android:id="@+id/CBemail"
+                android:layout_gravity="top|right"
+                android:elegantTextHeight="false" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="@string/text_cb_sms"
+                android:id="@+id/CBsms"
+                android:layout_gravity="bottom|right" />
+        </LinearLayout>
+
+    </TableRow>
+</TableLayout>
